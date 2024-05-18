@@ -14,4 +14,4 @@ RUN adduser -u 5574 --disabled-password --gecos "" appuser && chown -R appuser /
 USER appuser
 
 # We run the application
-CMD ["node", "register.js", "&&", "node", "index.js"]
+CMD node register.js && node index.js
